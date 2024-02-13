@@ -94,15 +94,16 @@
                     <p class="text-center text-lg font-normal flex-grow-0">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                     <div class="flex gap-4 mt-3">
                         <div>
-                            <input type="text" placeholder="d1" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
+                            <input id="rhombus-d1" type="text" placeholder="d1" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
                             <span class="ml-1 font-medium">cm</span>
                         </div>
                         <div>
-                            <input type="text" placeholder="d2" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
+                            <input id="rhombus-d2" type="text" placeholder="d2" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
                             <span class="ml-1 font-medium">cm</span>
                         </div>
                     </div>
-                    <div class="card-actions justify-end mt-8">
+                    <div><p class="text-xl font-medium p-2">Area : <span id="rhombus-area">0</span>m<sup>2</sup></p></div>
+                    <div class="card-actions justify-end mt-4">
                         <button class="btn w-full bg-blue-500 text-white font-bold text-xl">Calculate</button>
                     </div>
                 </div>
@@ -124,7 +125,8 @@
                             <span class="ml-1 font-medium">cm</span>
                         </div>
                     </div>
-                    <div class="card-actions justify-end mt-8">
+                    <div><p class="text-xl font-medium p-2">Area : <span id="pentagon-area">0</span>m<sup>2</sup></p></div>
+                    <div class="card-actions justify-end mt-4">
                         <button class="btn w-full bg-blue-500 text-white font-bold text-xl">Calculate</button>
                     </div>
                 </div>
@@ -146,7 +148,8 @@
                             <span class="ml-1 font-medium">cm</span>
                         </div>
                     </div>
-                    <div class="card-actions justify-end mt-8">
+                    <div><p class="text-xl font-medium p-2">Area : <span id="ellipse-area">0</span>m<sup>2</sup></p></div>
+                    <div class="card-actions justify-end mt-4">
                         <button class="btn w-full bg-blue-500 text-white font-bold text-xl">Calculate</button>
                     </div>
                 </div>
@@ -158,7 +161,10 @@
         </div>
     </main>
 
-    <script src="js/triangle.js"></script>
+    <!-- <script src="js/triangle.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script> -->
+    <script src="js/combinearea.js"></script>
 </body>
 
 </html>
