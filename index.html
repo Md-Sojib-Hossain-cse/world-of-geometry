@@ -25,15 +25,16 @@
                     <p class="text-center text-lg font-normal flex-grow-0">Area (A) = 0.5 x b x h</p>
                     <div class="flex gap-4 mt-3">
                         <div>
-                            <input type="text" placeholder="b" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
+                            <input type="text" id="input-base" placeholder="b" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
                             <span class="ml-1 font-medium">cm</span>
                         </div>
                         <div>
-                            <input type="text" placeholder="h" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
+                            <input type="text" id="input-height" placeholder="h" class="bg-gray-100 w-20 h-8 rounded-md pl-4">
                             <span class="ml-1 font-medium">cm</span>
                         </div>
                     </div>
-                    <div class="card-actions justify-end mt-8">
+                    <div><p class="text-xl font-medium p-2">Area : <span id="triangle-area">0</span>m<sup>2</sup></p></div>
+                    <div class="card-actions justify-end mt-4">
                         <button class="btn w-full bg-blue-500 text-white font-bold text-xl" onclick="calculateTriangleArea()">Calculate</button>
                     </div>
                 </div>
@@ -55,8 +56,9 @@
                             <span class="ml-1 font-medium">cm</span>
                         </div>
                     </div>
+                    <div><p class="text-xl font-medium p-2">Area : <span id="rectangle-area">0</span>m<sup>2</sup></p></div>
                     <div class="card-actions justify-end mt-8">
-                        <button class="btn w-full bg-blue-500 text-white font-bold text-xl">Calculate</button>
+                        <button id="rectangle-input" class="btn w-full bg-blue-500 text-white font-bold text-xl">Calculate</button>
                     </div>
                 </div>
             </div>
