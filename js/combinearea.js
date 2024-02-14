@@ -49,13 +49,16 @@ function inputValueConverter(converterId){
     return convertedValue;
 }
 function resultUpdate(reusltId , area){
+    const idOfResult = reusltId;
     const resultArea = document.getElementById(reusltId);
     resultArea.innerText = area;
 
     const ol = document.getElementById('result-container');
     const li = document.createElement('li');
-    li.innerText = area;
+    li.innerText =idOfResult + " : "+ area;
     ol.appendChild(li);
+    li.style.fontWeight = 'bold';
+    li.style.fontSize = '18px';
 }
 
 //Triangle Mouse Over
@@ -105,12 +108,10 @@ function mouseOutEllipse(){
 function mouseOverIn(overId){
     const mouseOverEffect = document.getElementById(overId);
     mouseOverEffect.style.backgroundColor = 'steelblue';
-    mouseOverEffect.style.color = 'white';
     mouseOverEffect.style.transition = '1s';
 }
 function mouseOverOut(outId){
     const mouseOutEffect = document.getElementById(outId);
     mouseOutEffect.style.backgroundColor = 'white';
-    mouseOutEffect.style.color = 'black';
     mouseOutEffect.style.transition = '1s';
 }
