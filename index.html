@@ -17,7 +17,7 @@
         <!-- Geometry container -->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Triangle card  -->
-            <div class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
+            <div id="triangle-card" onmouseover="mouseOverTriangle()" onmouseout="mouseOutTriangle()" class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
                 <figure class="p-8 "><img src="./images/triangle.png" alt="Triangle" class="h-24"/>
                 </figure>
                 <div class="card-body pt-0">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <!-- Rectangle card  -->
-            <div class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
+            <div id="rectangle-card" onmouseover="mouseOverRectangle()" onmouseout="mouseOutRectangle()" class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
                 <figure class="p-8 "><img src="./images//rectangle.png" alt="Rectangle" class="h-24"/>
                 </figure>
                 <div class="card-body pt-0">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <!-- parallelogram card  -->
-            <div class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
+            <div id="parallelogram-card" onmouseover="mouseOverParallelogram()" onmouseout="mouseOutParallelogram()" class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
                 <figure class="p-8 "><img src="./images/parallelogram.png" alt="parallelogram" class="h-24"/>
                 </figure>
                 <div class="card-body pt-0">
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <!-- Rhombus card  -->
-            <div class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
+            <div id="rhombus-card" onmouseover="mouseOverRhombus()" onmouseout="mouseOutRhombus()" class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
                 <figure class="p-8 "><img src="./images/rhombus.png" alt="rhombus" class="h-24"/>
                 </figure>
                 <div class="card-body pt-0">
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <!-- Pentagon card  -->
-            <div class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
+            <div id="pentagon-card" onmouseover="mouseOverPentagon()" onmouseout="mouseOutPentagon()" class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
                 <figure class="p-8 "><img src="./images/pentagon.png" alt="pentagon" class="h-24"/>
                 </figure>
                 <div class="card-body pt-0">
@@ -132,7 +132,7 @@
                 </div>
             </div>
             <!-- Ellipse card  -->
-            <div class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
+            <div id="ellipse-card" onmouseover="mouseOverEllipse()" onmouseout="mouseOutEllipse()" class="card w-full bg-base-100 shadow-xl border-2 border-gray-100">
                 <figure class="p-8 "><img src="./images/ellipse.png" alt="ellipse" class="h-24"/>
                 </figure>
                 <div class="card-body pt-0">
@@ -158,6 +158,8 @@
         <!-- Area calculation container  -->
         <div class="w-96 border-2 border-gray-100 rounded-lg min-h-[450px]">
             <h2 class="text-xl text-center underline pt-6 font-bold">Area Calculator</h2>
+            <ol id="result-container" class="list-decimal mt-4 ml-12">
+            </ol>
         </div>
     </main>
 

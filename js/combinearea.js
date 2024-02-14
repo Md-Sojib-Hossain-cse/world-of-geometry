@@ -48,8 +48,69 @@ function inputValueConverter(converterId){
     const convertedValue = parseFloat(inputValue);
     return convertedValue;
 }
-
 function resultUpdate(reusltId , area){
     const resultArea = document.getElementById(reusltId);
     resultArea.innerText = area;
+
+    const ol = document.getElementById('result-container');
+    const li = document.createElement('li');
+    li.innerText = area;
+    ol.appendChild(li);
+}
+
+//Triangle Mouse Over
+function mouseOverTriangle(){
+    mouseOverIn('triangle-card');
+}
+function mouseOutTriangle(){
+    mouseOverOut('triangle-card');
+}
+//Rectangle Mouse Over
+function mouseOverRectangle(){
+    mouseOverIn('rectangle-card');
+}
+function mouseOutRectangle(){
+    mouseOverOut('rectangle-card');
+}
+//Parallelogram Mouse Over
+function mouseOverParallelogram(){
+    mouseOverIn('parallelogram-card');
+}
+function mouseOutParallelogram(){
+    mouseOverOut('parallelogram-card');
+}
+//Rhombus Mouse Over
+function mouseOverRhombus(){
+    mouseOverIn('rhombus-card');
+}
+function mouseOutRhombus(){
+    mouseOverOut('rhombus-card');
+}
+//Pentagon Mouse Over
+function mouseOverPentagon(){
+    mouseOverIn('pentagon-card');
+}
+function mouseOutPentagon(){
+    mouseOverOut('pentagon-card');
+}
+//Triangle Mouse Over
+function mouseOverEllipse(){
+    mouseOverIn('ellipse-card');
+}
+function mouseOutEllipse(){
+    mouseOverOut('ellipse-card');
+}
+
+
+function mouseOverIn(overId){
+    const mouseOverEffect = document.getElementById(overId);
+    mouseOverEffect.style.backgroundColor = 'steelblue';
+    mouseOverEffect.style.color = 'white';
+    mouseOverEffect.style.transition = '1s';
+}
+function mouseOverOut(outId){
+    const mouseOutEffect = document.getElementById(outId);
+    mouseOutEffect.style.backgroundColor = 'white';
+    mouseOutEffect.style.color = 'black';
+    mouseOutEffect.style.transition = '1s';
 }
